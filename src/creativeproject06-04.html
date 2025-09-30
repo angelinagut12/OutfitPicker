@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 6
+      Creative project 6-4
+
+      Author: Angelina Gutierrez
+      Date:   06/16/2024
+
+      Filename: creativeproject06-04.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Outfit Styler</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script type="text/javascript" src="creativeproject06-04.js" defer></script>
+<meta name="description" content="Outfit Picker – choose a shirt and instantly see curated matching outfits with a responsive, accessible UI.">
+</head>
+
+<body>
+   <header>
+      <h1>
+         Outfit Styler
+      </h1>
+   </header>
+
+   <article>
+      <h1>Select Your Outfit</h1>
+      <form>
+         <fieldset>
+            <legend>Shirt Color</legend>
+            <select id="shirtColor" size="4">
+               <option>Select Color</option>
+               <option>Pink</option>
+               <option>Black</option>
+               <option>Yellow</option>
+               <option>Blue</option>            
+            </select>            
+         </fieldset>
+
+         <fieldset>
+            <legend>Bottoms</legend>
+            <select id="bottom" size="4">
+               <option>Select Bottoms</option>
+               <option class="Pink">Blue Jeans</option> 
+               <option class="Pink">White Pants</option>
+               <option class="Pink">Pink Pants</option>
+               <option class="Black">Blue Jeans</option> 
+               <option class="Black">Khakis</option>
+               <option class="Black">Bleached Jeans</option>
+               <option class="Yellow">Black Jeans</option>
+               <option class="Yellow">White Pants</option> 
+               <option class="Yellow">Blue Jeans</option>
+               <option class="Blue">White Pants</option>
+               <option class="Blue">Black Jeans</option>            
+               <option class="Blue">Bleached Jean</option>  
+                        
+            </select>            
+         </fieldset>
+
+         <fieldset>
+            <legend>Shoes</legend>
+            <select id="shoe" size="4">
+               <option>Select Shoes</option>
+               <option class="Blue Jeans">White Sneakers</option>
+			   <option class="Blue Jeans">Black Sneakers</option>
+			   
+               <option class="White Pants">Black Heals</option>
+			   <option class="White Pants">White Heals</option>
+			   <option class="White Pants">White Sandals</option>
+			   <option class="White Pants">Brown Boots</option>
+			   
+               <option class="Pink Pants">Brown Boots</option>
+			   <option class="Pink Pants">Brown Sandals</option>
+			   <option class="Pink Pants">White Sandals</option>
+			   
+               <option class="Bleached Jeans">White Sandals</option>
+			   <option class="Bleached Jeans">Black Sandals</option>
+			   <option class="Bleached Jeans">Brown Sandals</option>
+			   <option class="Bleached Jeans">Brown Boots</option>
+			   
+               <option class="Black Jeans">White Sneakers</option>
+			   
+               <option class="Khakis">Black Sneakers</option>
+			   <option class="Khakis">White Sneakers</option>
+			   
+			                       
+            </select>              
+         </fieldset>
+         
+         <input aria-label="Selectoutfit" type="button" value="Select" id="selectOutfit" />
+        
+      </form>
+      <p id="outfit"></p>
+		<div id="mannequin">
+		  <div class="body">
+			<div class="head">
+			  <!-- hair layers -->
+			  <div class="hair-back"></div>
+			  <div class="hair-bob"></div>
+			  <div class="bangs"></div>
+			</div>
+
+			<div class="torso"></div>
+
+			<!-- arms -->
+			<div class="arm left"></div>
+			<div class="arm right"></div>
+
+			<div class="legs"></div>
+			<div class="feet"></div>
+		  </div>
+		</div>
+	  </div>
+   </article>      
+</body>
+</html>
